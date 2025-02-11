@@ -4,7 +4,7 @@ services:
     container_name: flast_app
     restart: always
     ports:
-      - "3000:3000"
+      - "9090:9090"
 
   nginx:
     image: nginx:latest
