@@ -4,7 +4,7 @@ services:
   flast_app:
     build: .
     container_name: flast_app
-    restart: alwats
+    restart: always
     ports:
       - "5000:5000"
 
