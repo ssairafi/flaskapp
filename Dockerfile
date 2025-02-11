@@ -5,13 +5,15 @@ FROM python:3.9-slim
 WORKDIR /app
 
 # Copy the requirements file into the container
-COPY requirements.txt .
+# COPY requirements.txt .
 
 # Install the required dependencies
-RUN pip install --no-cache-dir -r requirements.txt
+# RUN pip install --no-cache-dir -r requirements.txt
 
 # Copy the rest of the application code into the container
-COPY . .
+COPY . /app
+
+RUN pip install flask
 
 # Expose the port the app runs on
 EXPOSE 5000
