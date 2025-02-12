@@ -1,5 +1,5 @@
 services:
-  flast_app:
+  flask_app:
     build: .
     container_name: flask_app
     restart: always
